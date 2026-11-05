@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Ovo&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --white: #ffffff;
+  --cream: #fff0cb;
+  --carrot: #f49619;
+  --rust: #b55232;
+  --ironstone: #824737;
+  --pine: #4c7031;
+  --black: #000000;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  border-bottom: double 10px var(--rust);
+  padding: 2rem;
+  background-color: var(--cream);
+}
+
+.logo {
+  max-width: 350px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  text-wrap: wrap;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: "Nunito Sans", sans-serif;
+  gap: 1rem;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--pine);
+}
+
+main {
+  margin: 4rem;
+}
+
+main a {
+  background-color: var(--pine);
+  color: var(--white);
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 5px;
+}
+
+h1,
+h2 {
+  font-family: "Ovo", serif;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+p {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+a {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+footer {
+  color: var(--white);
+  background-color: var(--pine);
+  border-top: double 10px var(--carrot);
+  padding: 3rem 1rem;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+@media (min-width: 700px) {
+  .season-grid {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+  }
+  .season-card {
+    width: calc((100% - 4rem) / 3);
+  }
+}
+
+@media (min-width: 925px) {
+  header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  nav ul {
+    margin: 0;
+  }
+}
